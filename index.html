@@ -36,6 +36,12 @@
           </ul>
         </nav>
 
+        <button type="button" class="open-mobile-menu-btn btn" data-menu-open>
+          <svg class="open-mobile-menu-btn-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
+
         <!-- header contacts -->
 
         <address class="adr-contacts">
@@ -48,6 +54,69 @@
             </li>
           </ul>
         </address>
+      </div>
+
+      <!-- mobile menu -->
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button type="button" class="btn modal-close-btn" data-menu-close>
+            <svg class="modal-close-btn-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-modal"></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-menu-list list">
+            <li class="mobile-menu-list-item">
+              <a href="./index.html" class="link mobile-menu-list-link current">Studio</a>
+            </li>
+            <li class="mobile-menu-list-item">
+              <a href="./portfolio.html" class="link mobile-menu-list-link">Portfolio</a>
+            </li>
+            <li class="mobile-menu-list-item">
+              <a href="" class="link mobile-menu-list-link">Contacts</a>
+            </li>
+          </ul>
+
+          <div class="mobile-menu-social-container">
+            <a href="tel:+110001111111" class="link mobile-menu-tel">+11 (000) 111-11-11</a>
+            <a href="mailto:info@devstudio.com" class="link mobile-menu-mail">info@devstudio.com</a>
+
+            <ul class="list mobile-menu-social-list">
+              <li class="social-icons-list-item">
+                <a href="" class="link social-icons-link">
+                  <svg class="social-icons" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social-icons-list-item">
+                <a href="" class="link social-icons-link">
+                  <svg class="social-icons" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social-icons-list-item">
+                <a href="" class="link social-icons-link">
+                  <svg class="social-icons" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social-icons-list-item">
+                <a href="" class="link social-icons-link">
+                  <svg class="social-icons" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -68,7 +137,7 @@
       <section id="principles" class="section">
         <div class="container">
           <h2 class="visually-hidden">Principles</h2>
-          <ul class="list section-list">
+          <ul class="list section-list section-prinsiples-list">
             <li class="section-list-item principles-list-item">
               <div class="principles-list-icon-box">
                 <svg class="principles-list-icon" width="64" height="64">
@@ -132,6 +201,7 @@
           <ul class="list section-list">
             <li class="section-list-item ourwork-list-item">
               <img
+                srcset="./images/whatwedo/websites.jpg 1x, ./images/whatwedo/websites@2x.jpg 2x"
                 src="./images/whatwedo/websites.jpg"
                 alt="Monitor with opened website on it"
                 width="360"
@@ -140,6 +210,10 @@
 
             <li class="section-list-item ourwork-list-item">
               <img
+                srcset="
+                  ./images/whatwedo/aplications.jpg    1x,
+                  ./images/whatwedo/aplications@2x.jpg 2x
+                "
                 src="./images/whatwedo/aplications.jpg"
                 alt="Mobile phone with opened aplication"
                 width="360"
@@ -148,6 +222,10 @@
 
             <li class="section-list-item ourwork-list-item">
               <img
+                srcset="
+                  ./images/whatwedo/mobileversions.jpg    1x,
+                  ./images/whatwedo/mobileversions@2x.jpg 2x
+                "
                 src="./images/whatwedo/mobileversions.jpg"
                 alt="Laptop and phone with same opened website"
                 width="360"
@@ -162,9 +240,10 @@
       <section id="team" class="section ourteam-sec">
         <div class="container">
           <h2 class="ourteam-title section-title">Our Team</h2>
-          <ul class="list section-list">
+          <ul class="list section-list list-ourteam">
             <li class="ourteam-item section-list-item">
               <img
+                srcset="./images/team/markguerrero.jpg 1x, ./images/team/markguerrero@2x.jpg 2x"
                 src="./images/team/markguerrero.jpg"
                 alt="portret of Mark Guerrero"
                 width="264"
@@ -174,9 +253,7 @@
                 <h3 class="ourteam-item-title item-title">Mark Guerrero</h3>
                 <p class="ourteam-item-text item-text">Product Designer</p>
 
-                <!-- list of social icons -->
-
-                <ul class="list section-list social-icons-list">
+                <ul class="list social-icons-list">
                   <li class="social-icons-list-item">
                     <a href="" class="link social-icons-link ourteam-social-icons-link">
                       <svg class="social-icons" width="16" height="16">
@@ -214,6 +291,7 @@
 
             <li class="ourteam-item section-list-item">
               <img
+                srcset="./images/team/tomford.jpg 1x, ./images/team/tomford@2x.jpg 2x"
                 src="./images/team/tomford.jpg"
                 alt="portret of Tom Ford"
                 width="264"
@@ -223,9 +301,7 @@
                 <h3 class="ourteam-item-title item-title">Tom Ford</h3>
                 <p class="ourteam-item-text item-text">Frontend Developer</p>
 
-                <!-- list of social icons -->
-
-                <ul class="list section-list social-icons-list">
+                <ul class="list social-icons-list">
                   <li class="social-icons-list-item">
                     <a href="" class="link social-icons-link ourteam-social-icons-link">
                       <svg class="social-icons" width="16" height="16">
@@ -263,6 +339,7 @@
 
             <li class="ourteam-item section-list-item">
               <img
+                srcset="./images/team/camilagarcia.jpg 1x, ./images/team/camilagarcia@2x.jpg 2x"
                 src="./images/team/camilagarcia.jpg"
                 alt="portret of Camila Garcia"
                 width="264"
@@ -272,9 +349,7 @@
                 <h3 class="ourteam-item-title item-title">Camila Garcia</h3>
                 <p class="ourteam-item-text item-text">Marketing</p>
 
-                <!-- list of social icons -->
-
-                <ul class="list section-list social-icons-list">
+                <ul class="list social-icons-list">
                   <li class="social-icons-list-item">
                     <a href="" class="link social-icons-link ourteam-social-icons-link">
                       <svg class="social-icons" width="16" height="16">
@@ -312,6 +387,7 @@
 
             <li class="ourteam-item section-list-item">
               <img
+                srcset="./images/team/danielwilson.jpg 1x, ./images/team/danielwilson@2x.jpg 2x"
                 src="./images/team/danielwilson.jpg"
                 alt="portret of Daniel Wilson"
                 width="264"
@@ -321,9 +397,7 @@
                 <h3 class="ourteam-item-title item-title">Daniel Wilson</h3>
                 <p class="ourteam-item-text item-text">UI Designer</p>
 
-                <!-- list of social icons -->
-
-                <ul class="list section-list social-icons-list">
+                <ul class="list social-icons-list">
                   <li class="social-icons-list-item">
                     <a href="" class="link social-icons-link ourteam-social-icons-link">
                       <svg class="social-icons" width="16" height="16">
@@ -488,7 +562,7 @@
     </footer>
 
     <!-- modal window -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn btn" data-modal-close>
           <svg class="modal-close-btn-icon" width="8" height="8">
@@ -559,9 +633,10 @@
           <button type="submit" class="modal-button-submit btn">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
 
     <!-- body section end-->
-    <script src="./js/modal.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>
