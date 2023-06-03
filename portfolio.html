@@ -26,9 +26,11 @@
           <a href="./index.html" class="link logo">Web<span class="logo-header">Studio</span></a>
           <ul class="list nav-list">
             <li class="nav-item">
-              <a href="./index.html" class="link nav-link current">Studio</a>
+              <a href="./index.html" class="link nav-link">Studio</a>
             </li>
-            <li class="nav-item"><a href="./portfolio.html" class="link nav-link">Portfolio</a></li>
+            <li class="nav-item">
+              <a href="./portfolio.html" class="link nav-link current">Portfolio</a>
+            </li>
             <li class="nav-item"><a href="" class="link nav-link">Contacts</a></li>
           </ul>
         </nav>
@@ -152,12 +154,31 @@
             <li class="portfolio-list-item">
               <a href="" class="link portfolio-list-link">
                 <div class="portfolio-img-thumb">
-                  <img
-                    src="./images/portfolio/bankingapp.jpg"
-                    alt="Seveal windows of online banking app"
-                    width="360"
-                    height="300"
-                    class="item-img" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/bankingapp.jpg    1x,
+                        ./images/portfolio/bankingapp@2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/bankingapp-tab.jpg    1x,
+                        ./images/portfolio/bankingapp-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/bankingapp-mob.jpg    1x,
+                        ./images/portfolio/bankingapp-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)" />
+                    <img
+                      src="./images/portfolio/bankingapp-mob.jpg"
+                      alt="Seveal windows of online banking app"
+                      class="item-img"
+                  /></picture>
+
                   <p class="portfolio-img-thumb-text">
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                     Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -173,12 +194,31 @@
             <li class="portfolio-list-item">
               <a href="" class="link portfolio-list-link">
                 <div class="portfolio-img-thumb">
-                  <img
-                    src="./images/portfolio/cashlesspayment.jpg"
-                    alt="Smartphone scan QR code from terminal"
-                    width="360"
-                    height="300"
-                    class="item-img" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/cashlesspayment.jpg    1x,
+                        ./images/portfolio/cashlesspayment@2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/cashlesspayment-tab.jpg    1x,
+                        ./images/portfolio/cashlesspayment-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/cashlesspayment-mob.jpg    1x,
+                        ./images/portfolio/cashlesspayment-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)" />
+                    <img
+                      src="./images/portfolio/cashlesspayment-mob.jpg"
+                      alt="Smartphone scan QR code from terminal"
+                      class="item-img" />
+                  </picture>
+
                   <p class="portfolio-img-thumb-text">
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                     Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -194,13 +234,31 @@
             <li class="portfolio-list-item">
               <a href="" class="link portfolio-list-link">
                 <div class="portfolio-img-thumb">
-                  <img
-                    src="./images/portfolio/meditationapp.jpg"
-                    alt="On the screen of laptop website
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/meditationapp.jpg    1x,
+                        ./images/portfolio/meditationapp@2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/meditationapp-tab.jpg    1x,
+                        ./images/portfolio/meditationapp-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/meditationapp-mob.jpg    1x,
+                        ./images/portfolio/meditationapp-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)" />
+                    <img
+                      src="./images/portfolio/meditationapp-mob.jpg"
+                      alt="On the screen of laptop website
             with title Return to normalcy"
-                    width="360"
-                    height="300"
-                    class="item-img" />
+                      class="item-img" />
+                  </picture>
                   <p class="portfolio-img-thumb-text">
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                     Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -216,12 +274,31 @@
             <li class="portfolio-list-item">
               <a href="" class="link portfolio-list-link">
                 <div class="portfolio-img-thumb">
-                  <img
-                    src="./images/portfolio/taxiservice.jpg"
-                    alt="Driver drive a car and use taxi app"
-                    width="360"
-                    height="300"
-                    class="item-img" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/taxiservice.jpg    1x,
+                        ./images/portfolio/taxiservice@2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/taxiservice-tab.jpg    1x,
+                        ./images/portfolio/taxiservice-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/taxiservice-mob.jpg    1x,
+                        ./images/portfolio/taxiservice-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)" />
+                    <img
+                      src="./images/portfolio/taxiservice-mob.jpg"
+                      alt="Driver drive a car and use taxi app"
+                      class="item-img" />
+                  </picture>
+
                   <p class="portfolio-img-thumb-text">
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                     Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -237,12 +314,30 @@
             <li class="portfolio-list-item">
               <a href="" class="link portfolio-list-link">
                 <div class="portfolio-img-thumb">
-                  <img
-                    src="./images/portfolio/screenillustrations.jpg"
-                    alt="5 scrrenn of smartpone with different illustrations"
-                    width="360"
-                    height="300"
-                    class="item-img" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/screenillustrations.jpg    1x,
+                        ./images/portfolio/screenillustrations@2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/screenillustrations-tab.jpg    1x,
+                        ./images/portfolio/screenillustrations-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/screenillustrations-mob.jpg    1x,
+                        ./images/portfolio/screenillustrations-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)" />
+                    <img
+                      src="./images/portfolio/screenillustrations-mob.jpg"
+                      alt="5 scrrenn of smartpone with different illustrations"
+                      class="item-img"
+                  /></picture>
                   <p class="portfolio-img-thumb-text">
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                     Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -258,12 +353,31 @@
             <li class="portfolio-list-item">
               <a href="" class="link portfolio-list-link">
                 <div class="portfolio-img-thumb">
-                  <img
-                    src="./images/portfolio/onlinecourses.jpg"
-                    alt="Women listen and wath some course throght smartphone"
-                    width="360"
-                    height="300"
-                    class="item-img" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/onlinecourses.jpg    1x,
+                        ./images/portfolio/onlinecourses@2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/onlinecourses-tab.jpg    1x,
+                        ./images/portfolio/onlinecourses-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/onlinecourses-mob.jpg    1x,
+                        ./images/portfolio/onlinecourses-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)" />
+                    <img
+                      src="./images/portfolio/onlinecourses-mob.jpg"
+                      alt="Women listen and wath some course throght smartphone"
+                      class="item-img"
+                  /></picture>
+
                   <p class="portfolio-img-thumb-text">
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                     Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -279,12 +393,31 @@
             <li class="portfolio-list-item">
               <a href="" class="link portfolio-list-link">
                 <div class="portfolio-img-thumb">
-                  <img
-                    src="./images/portfolio/instagramstories.jpg"
-                    alt="Several examples of Instagram stories concept"
-                    width="360"
-                    height="300"
-                    class="item-img" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/instagramstories.jpg    1x,
+                        ./images/portfolio/instagramstories@2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/instagramstories-tab.jpg    1x,
+                        ./images/portfolio/instagramstories-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/instagramstories-mob.jpg    1x,
+                        ./images/portfolio/instagramstories-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)" />
+                    <img
+                      src="./images/portfolio/instagramstories-mob.jpg"
+                      alt="Several examples of Instagram stories concept"
+                      class="item-img"
+                  /></picture>
+
                   <p class="portfolio-img-thumb-text">
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                     Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -300,12 +433,31 @@
             <li class="portfolio-list-item">
               <a href="" class="link portfolio-list-link">
                 <div class="portfolio-img-thumb">
-                  <img
-                    src="./images/portfolio/organicfood.jpg"
-                    alt="Women carry some vegetables in eco bag"
-                    width="360"
-                    height="300"
-                    class="item-img" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/organicfood.jpg    1x,
+                        ./images/portfolio/organicfood@2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/organicfood-tab.jpg    1x,
+                        ./images/portfolio/organicfood-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/organicfood-mob.jpg    1x,
+                        ./images/portfolio/organicfood-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)" />
+                    <img
+                      src="./images/portfolio/organicfood-mob.jpg"
+                      alt="Women carry some vegetables in eco bag"
+                      class="item-img"
+                  /></picture>
+
                   <p class="portfolio-img-thumb-text">
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                     Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
@@ -321,12 +473,31 @@
             <li class="portfolio-list-item">
               <a href="" class="link portfolio-list-link">
                 <div class="portfolio-img-thumb">
-                  <img
-                    src="./images/portfolio/freshcoffee.jpg"
-                    alt="Barista pour milk into cup of coffee"
-                    width="360"
-                    height="300"
-                    class="item-img" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/freshcoffee.jpg    1x,
+                        ./images/portfolio/freshcoffee@2x.jpg 2x
+                      "
+                      media="(min-width: 1158px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/freshcoffee-tab.jpg    1x,
+                        ./images/portfolio/freshcoffee-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio/freshcoffee-mob.jpg    1x,
+                        ./images/portfolio/freshcoffee-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)" />
+                    <img
+                      src="./images/portfolio/freshcoffee-mob.jpg"
+                      alt="Barista pour milk into cup of coffee"
+                      class="item-img"
+                  /></picture>
+
                   <p class="portfolio-img-thumb-text">
                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                     Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
